@@ -1,0 +1,40 @@
+Steps to create a react project:
+
+1. create a folder where the project should be saved
+2. In the terminal -  npm init react-app 'Name of the app' -> this will create the basic dependecies and template of the app.
+3. in package.json if we want to enable CSS modules so that I can make sure that the CSS classes that we create CSS file can be scoped to a specific component in our application so that they are not applied globally when we would accidentally reuse the same CSS class.
+
+npm run eject	-> Y
+
+4. once ejected to implement CSS module you get access to the config in a config folder and there to webpack configuration files.
+in CSS-loader-> getStyleLoaders  
+
+              use: getStyleLoaders({
+                importLoaders:1,
+                sourceMap: shouldUseSourceMap,
+                modules: {localIdentName: '[path][name]__[local]__[hash:base64:5]'}
+              }),
+5. clean-up before starting the project
+	src-> logo.svg - this can be removed
+	remove it from App.js imports as well
+	import logo from './logo.svg';
+	
+	in App.js file remove the entire header section, class name from div and import App.css and also App.css from src file too
+	
+6. 	for better font
+	in index.css cahange the font family to sans-serif
+	google --google fonts
+	select open-sans
+	select family selected
+	change customize add bold700
+	in Embed use the standard link and paste it above the title tag
+--------------------------------------------------------------------
+Developing the components:
+
+7. in src create components folder -> dumb or presentational components 
+									  that do not manage state are only for representational purposes.
+									  these could be class or functional components that are using hooks.
+				 containers -> stateful components i.e. components created with class key word or functions that use state
+8. create layout component in components folder
+	code layout.js
+	

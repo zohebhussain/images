@@ -1,0 +1,58 @@
+ratio_interval_only = {'Height':'continuous', 'Weight': 'continuous', 'BMI': 'continuous', 'Age': 'discrete', 'Games Played': 'discrete', 'MIN': 'continuous', 'FGM': 'discrete',
+'FGA': 'discrete', 'FG%': 'continuous', '3PA': 'discrete', '3P%': 'continuous', 'FTM': 'discrete', 'FTA': 'discrete', 'FT%': 'continuous',
+'OREB': 'discrete', 'DREB': 'discrete', 'REB': 'discrete', 'AST': 'discrete', 'STL': 'discrete', 'BLK': 'discrete', 'TO': 'discrete',
+'PTS': 'discrete', 'DD2': 'discrete', 'TD3': 'discrete', 'Weight_deviation': 'continuous'}
+					   
+					   
+					   
+					   
+discrete
+continuous
+					   
+del
+copy
+move
+					   
+to create a file in windows cmd copy NUL test.js
+to remove files in windows recursively rmdir /S test(directory name)
+
+
+to open a file
+start index.html
+
+to create package
+1. open the folder where the package should be created
+2. npm init
+3. give package name
+4. give version of the package 1.0.0
+5. description of the project
+6. name
+7. license
+
+package.json file gets created--> you can view this in the IDE as welll when the code is imported
+
+
+installing webpack
+in the project folder
+npm install webpack --save-dev
+
+--save-dev means it will save webpack dependency of the project
+
+
+once installed you will see webpack in pack dependency created in the project package -- as devDependency
+
+all development tool fall under devDependency
+
+
+to add the libraries like reactjs/ jquery..these will be added as dependencies not as devDependency
+npm install jquery --save
+
+
+
+each dependencies/ devDependency added to package.json also have their own dependencies. to install these in the package folder do npm install
+
+to remove a dependencies/devDependency from package do npm uninstall jquery --save
+
+
+
+npm install live-server --global--------------> to run the npm commands from everywhere
